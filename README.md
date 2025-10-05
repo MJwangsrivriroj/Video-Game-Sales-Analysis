@@ -11,15 +11,22 @@ The goal of this project is to understand what factors affect video game sales. 
 
 ---
 
-##  Executive Summary
+## Executive Summary
 This analysis uses a Kaggle dataset of 16,000+ video game records to explore what makes a video game successful.  
-We examined how genre, platform, critic score, and user score influence global sales through data cleaning, visualization, and modeling.  
-Linear Regression, Lasso Regression, and Decision Tree models were applied, and clustering techniques grouped games by performance.  
+We examined how genre, platform, critic score, and user score influence global sales through data cleaning, visualization, modeling, and Excel-based A/B simulations.  
 
 **Key Findings:**
-- Critic scores and release timing strongly influence global sales.  
-- Decision Tree performed best (R² = 0.692).  
-- Cluster analysis showed most games sell modestly, with only a few blockbusters dominating sales.
+- Critic scores ≥80 strongly influence higher global sales (verified via A/B simulation).  
+- Decision Tree performed best among predictive models (R² = 0.692).  
+- Regional preferences: NA favors shooters/sports, JP favors RPGs.  
+- Cluster analysis showed most games sell modestly, with only a few blockbusters dominating sales.  
+
+---
+
+## Excel Dashboard & A/B Simulation
+- **Dashboard:** Visualized trends across genres, platforms, and regions.  
+- **A/B Testing:** Compared games with critic scores ≥80 against lower-rated games, confirming higher sales performance.  
+- **Insights:** Helped identify top-performing titles, optimal release timing, and regional market strategies.
 
 ---
 
@@ -66,7 +73,7 @@ Provided additional grouping confirmation but added limited new insight.
 
 ---
 
-##  Reproducibility
+## Reproducibility
 All analysis and modeling are contained in the Jupyter Notebook.  
 To reproduce results:
 ```bash
